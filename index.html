@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <!DOCTYPE html>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="paperbackground.jpg" sizes="16x16" type="image/jpg">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+
+  <html>
+
+  <title></title>
+
+</head>
+
+<body>
+
+  <h1 class="text">Dungeons & Dragons Dice Roller
+    <br>
+    <div id="app">
+      <button v-on:click="d100" class="myButton">Roll a D100</button>
+      <button v-on:click="d20" class="myButton">Roll a D20</button>
+      <button v-on:click="d12" class="myButton">Roll a D12</button>
+      <button v-on:click="d10" class="myButton">Roll a D10</button>
+      <button v-on:click="d8" class="myButton">Roll a D8</button>
+      <button v-on:click="d6" class="myButton">Roll a D6</button>
+      <button v-on:click="d4" class="myButton">Roll a D4</button>
+      <button v-on:click="d2" class="myButton">Roll a D2</button>
+
+
+      <div class="number">
+        <div v-for="value in info" class="value">
+          {{ value.value }}
+        </div>
+      </div>
+    </div>
+
+    <h2>Don't know what this is?</h2>
+    <p>
+      This page is for nerds who play tabletop games like Dungeons and Dragons or Pathfinder!<br>
+      Many of these games require the use of a variety of dice to play.<br>
+      The most commonly used die for these games is called a "d20",<br>
+      which is shorthand to mean a twenty-sided die.<br>
+      This webpage includes all of the common dice needed for these types of games!<br>
+      So go ahead, press some buttons and get some random numbers!
+    </p>
+
+    <footer>
+      <p>
+        <a href="https://github.com/JacobWhiz/creativeproject3">Github Repository for this website</a>
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script text="type/javascript" src="/script.js">
+    </script>
+
+</body>
