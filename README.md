@@ -4,10 +4,3 @@
     This features some simple Javascript to call a Random Number Generator API, and I used it as a functional Dungeons and Dragons Dice Roller.
     I hosted this as a website from my home network for quite some time because it was surprisingly useful.
     <br />
-
-### Built With
-
-* HTML
-* CSS
-* Javascript
-* Random Number Generator API
